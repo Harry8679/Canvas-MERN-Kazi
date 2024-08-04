@@ -6,7 +6,7 @@ dotenv.config();
 
 if (process.env.NODE_ENV !== 'local') {
     app.use(cors({
-        origin: 'http://localhost:3000',
+        origin: 'http://localhost:5175',
         credentials: true,
     }));
 } else {
