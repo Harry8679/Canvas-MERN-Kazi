@@ -1,14 +1,17 @@
-import './App.css'
+import { Root } from 'postcss';
+import './App.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Root />
+  }
+]);
 
 const App = () => {
 
-  return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world for everyone!
-      </h1>
-    </>
-  )
+  return <RouterProvider router={router} />
 }
 
 export default App
