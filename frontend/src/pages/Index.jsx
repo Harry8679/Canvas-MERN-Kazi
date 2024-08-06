@@ -9,7 +9,26 @@ const Index = () => {
                         <div className='w-[80px] h-[48px]'>
                             <img src='https://static.canva.com/web/images/12487a1e0770d29351bd4ce4f87ec8fe.svg' alt='canva logo' />
                         </div>
+                        <div className='flex gap-4'>
+                            <button className='py-2 w-[80px] text-center bg-teal-700 text-white transition-all hover:bg-teal-500 rounded-[5px] font-medium'>
+                                Sign In
+                            </button>
+                            <button className='py-2 w-[80px] text-center bg-purple-700 text-white transition-all hover:bg-purple-500 rounded-[5px] font-medium'>
+                                Sign Up
+                            </button>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div className='w-full h-full justify-center items-center p-4'>
+                <div className='py-[170px] flex justify-center items-center flex-col gap-6'>
+                    <h2 className='text-5xl text-[#c7c5c5] font-bold'>What you will design today ?</h2>
+                    <span className='text-[#aca9a9] text-2xl font-medium'>
+                        Canva makes it easy to create and share professional designs.
+                    </span>
+                    <button className='py-2 w-[200px] text-center bg-purple-700 text-white transition-all hover:bg-purple-500 rounded-[5px] font-medium'>
+                        Sign Up for Free
+                    </button>
                 </div>
             </div>
         </div>
