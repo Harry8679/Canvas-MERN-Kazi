@@ -1,11 +1,11 @@
-import { Root } from 'postcss';
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Index from './pages/Index';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Root />
+    element: <Index />
   }
 ]);
 
