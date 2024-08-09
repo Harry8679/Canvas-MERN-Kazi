@@ -10,8 +10,16 @@ const Index = () => {
         <div className='bg-[#18191b] min-h-screen w-full'>
             <div className={`w-screen ${show ? 'visible opacity-30': 'invisible opacity-30'} transition-all duration-500 h-screen fixed bg-[#252627ad] 
             flex justify-center items-center`}>
-                <div className='w-[350px] m-auto px-6 py-4 rounded-md relative'>
+                <div className='w-[350px] bg-[#323335] m-auto px-6 py-4 rounded-md relative'>
                     <div onClick={() => setShow(false)} className='absolute right-4 top-4 text-xl cursor-pointer text-white'><RxCross2 /></div>
+                    <h2>Login and Sign up in seconds</h2>
+                    <form action="">
+                        <div className='flex flex-col gap-3 mb-3 text-white'>
+                            <label htmlFor="email">Email</label>
+                            <input type="email" name='email' id='email' placeholder='Your Email' className='px-3 py-2 rounded-md border 
+                            outline-none border-[#5c5c5e] focus:border-purple-500 bg-transparent' />
+                        </div>
+                    </form>
                 </div>
             </div>
             <div className='bg-[#212223] shadow-md'>
