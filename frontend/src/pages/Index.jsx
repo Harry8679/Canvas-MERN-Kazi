@@ -33,6 +33,11 @@ const Index = () => {
                             <input type="email" name='email' id='email' placeholder='Your Email' className='px-3 py-2 rounded-md border 
                             outline-none border-[#5c5c5e] focus:border-purple-500 bg-transparent' value={state.email} onChange={inputHandle} />
                         </div>
+                        <div className='flex flex-col gap-3 mb-3 text-white'>
+                            <label htmlFor="password">Password</label>
+                            <input type="password" name='password' id='password' placeholder='Your password' className='px-3 py-2 rounded-md border 
+                            outline-none border-[#5c5c5e] focus:border-purple-500 bg-transparent' value={state.email} onChange={inputHandle} />
+                        </div>
                     </form>
                 </div>
             </div>
