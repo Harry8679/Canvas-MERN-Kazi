@@ -12,6 +12,8 @@ const Index = () => {
         password: ''
     });
 
+    console.log(state);
+
     const inputHandle = (e) => {
         setState({
             ...state,
