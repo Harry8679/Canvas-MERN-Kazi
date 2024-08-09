@@ -11,6 +11,13 @@ const Index = () => {
         email: '',
         password: ''
     });
+
+    const inputHandle = (e) => {
+        setState({
+            ...state,
+            [e.target.name]: e.target.value
+        });
+    }
     return (
         <div className='bg-[#18191b] min-h-screen w-full'>
             <div className={`w-screen ${show ? 'visible opacity-100': 'invisible opacity-30'} transition-all duration-500 h-screen fixed bg-[#252627ad] 
@@ -22,7 +29,7 @@ const Index = () => {
                         <div className='flex flex-col gap-3 mb-3 text-white'>
                             <label htmlFor="email">Email</label>
                             <input type="email" name='email' id='email' placeholder='Your Email' className='px-3 py-2 rounded-md border 
-                            outline-none border-[#5c5c5e] focus:border-purple-500 bg-transparent' />
+                            outline-none border-[#5c5c5e] focus:border-purple-500 bg-transparent' value={state.email} onChange={inputHandle} />
                         </div>
                     </form>
                 </div>
