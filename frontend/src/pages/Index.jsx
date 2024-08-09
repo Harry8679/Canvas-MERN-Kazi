@@ -8,7 +8,7 @@ const Index = () => {
     const [show, setShow] = useState(false);
     return (
         <div className='bg-[#18191b] min-h-screen w-full'>
-            <div className={`w-screen ${show ? 'visible opacity-30': 'invisible opacity-30'} transition-all duration-500 h-screen fixed bg-[#252627ad] 
+            <div className={`w-screen ${show ? 'visible opacity-100': 'invisible opacity-30'} transition-all duration-500 h-screen fixed bg-[#252627ad] 
             flex justify-center items-center`}>
                 <div className='w-[350px] bg-[#323335] m-auto px-6 py-4 rounded-md relative'>
                     <div onClick={() => setShow(false)} className='absolute right-4 top-4 text-xl cursor-pointer text-white'><RxCross2 /></div>
