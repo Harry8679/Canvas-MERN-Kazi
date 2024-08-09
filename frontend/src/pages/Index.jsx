@@ -6,6 +6,11 @@ import { RxCross2 } from "react-icons/rx";
 
 const Index = () => {
     const [show, setShow] = useState(false);
+    const [state, setState] = useState({
+        name: '',
+        email: '',
+        password: ''
+    });
     return (
         <div className='bg-[#18191b] min-h-screen w-full'>
             <div className={`w-screen ${show ? 'visible opacity-100': 'invisible opacity-30'} transition-all duration-500 h-screen fixed bg-[#252627ad] 
