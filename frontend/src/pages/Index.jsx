@@ -38,6 +38,11 @@ const Index = () => {
                             <input type="password" name='password' id='password' placeholder='Your password' className='px-3 py-2 rounded-md border 
                             outline-none border-[#5c5c5e] focus:border-purple-500 bg-transparent' value={state.email} onChange={inputHandle} />
                         </div>
+                        <div>
+                            <button className='px-3 py-2 rounded-md bg-purple-500 w-full outline-none hover:bg-purple-600 text-white'>
+                                Sign In
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
