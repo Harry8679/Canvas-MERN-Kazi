@@ -1,7 +1,8 @@
-// import React from 'react';
-
 import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
+import { BiLogoGmail } from "react-icons/bi";
+import { FaFacebook } from "react-icons/fa6";
+
 
 
 const Index = () => {
@@ -41,6 +42,25 @@ const Index = () => {
                         <div>
                             <button className='px-3 py-2 rounded-md bg-purple-500 w-full outline-none hover:bg-purple-600 text-white'>
                                 Sign In
+                            </button>
+                        </div>
+                        <div className='flex py-4 justify-between items-center px-3'>
+                            <div className='w-[45%] h-[1px] bg-slate-500'></div>
+                            <div className='w-[6%] text-center flex pb-1 text-white'>Or</div>
+                            <div className='w-[45%] h-[1px] bg-slate-500'></div>
+                        </div>
+
+                        <div className='pb-4'>
+                            <button className='px-3 flex justify-center items-center gap-2 py-2 rounded-md bg-red-500 w-full outline-none hover:bg-red-600 text-white'>
+                                <span><BiLogoGmail /></span>
+                                <span>Login with Gmail</span>
+                            </button>
+                        </div>
+
+                        <div className='pb-4'>
+                            <button className='px-3 flex justify-center items-center gap-2 py-2 rounded-md bg-blue-500 w-full outline-none hover:bg-blue-600 text-white'>
+                                <span><FaFacebook /></span>
+                                <span>Login with Facebook</span>
                             </button>
                         </div>
                     </form>
