@@ -6,6 +6,7 @@ import { FaFacebook } from "react-icons/fa6";
 
 
 const Index = () => {
+    const [type, setType] = useState('');
     const [show, setShow] = useState(false);
     const [state, setState] = useState({
         name: '',
@@ -28,6 +29,7 @@ const Index = () => {
                 <div className='w-[350px] bg-[#323335] m-auto px-6 py-4 rounded-md relative'>
                     <div onClick={() => setShow(false)} className='absolute right-4 top-4 text-xl cursor-pointer text-white'><RxCross2 /></div>
                     <h2 className='text-white pb-4 text-center text-xl'>Login and Sign up in seconds</h2>
+                    { type === 'signin' && 
                     <form action="">
                         <div className='flex flex-col gap-3 mb-3 text-white'>
                             <label htmlFor="email">Email</label>
@@ -64,6 +66,51 @@ const Index = () => {
                             </button>
                         </div>
                     </form>
+                    }
+
+                    { type === 'signup' && 
+                    <form action="">
+                        <div className='flex flex-col gap-3 mb-3 text-white'>
+                            <label htmlFor="email">Name</label>
+                            <input type="text" name='name' id='name' placeholder='Your Name' className='px-3 py-2 rounded-md border 
+                            outline-none border-[#5c5c5e] focus:border-purple-500 bg-transparent' value={state.email} onChange={inputHandle} />
+                        </div>
+                        <div className='flex flex-col gap-3 mb-3 text-white'>
+                            <label htmlFor="email">Email</label>
+                            <input type="email" name='email' id='email' placeholder='Your Email' className='px-3 py-2 rounded-md border 
+                            outline-none border-[#5c5c5e] focus:border-purple-500 bg-transparent' value={state.email} onChange={inputHandle} />
+                        </div>
+                        <div className='flex flex-col gap-3 mb-3 text-white'>
+                            <label htmlFor="password">Password</label>
+                            <input type="password" name='password' id='password' placeholder='Your password' className='px-3 py-2 rounded-md border 
+                            outline-none border-[#5c5c5e] focus:border-purple-500 bg-transparent' value={state.email} onChange={inputHandle} />
+                        </div>
+                        <div>
+                            <button className='px-3 py-2 rounded-md bg-purple-500 w-full outline-none hover:bg-purple-600 text-white'>
+                                Sign In
+                            </button>
+                        </div>
+                        <div className='flex py-4 justify-between items-center px-3'>
+                            <div className='w-[45%] h-[1px] bg-slate-500'></div>
+                            <div className='w-[6%] text-center flex pb-1 text-white'>Or</div>
+                            <div className='w-[45%] h-[1px] bg-slate-500'></div>
+                        </div>
+
+                        <div className='pb-4'>
+                            <button className='px-3 flex justify-center items-center gap-2 py-2 rounded-md bg-red-500 w-full outline-none hover:bg-red-600 text-white'>
+                                <span><BiLogoGmail /></span>
+                                <span>Login with Gmail</span>
+                            </button>
+                        </div>
+
+                        <div className='pb-4'>
+                            <button className='px-3 flex justify-center items-center gap-2 py-2 rounded-md bg-blue-500 w-full outline-none hover:bg-blue-600 text-white'>
+                                <span><FaFacebook /></span>
+                                <span>Login with Facebook</span>
+                            </button>
+                        </div>
+                    </form>
+                    }
                 </div>
             </div>
             <div className='bg-[#212223] shadow-md'>
