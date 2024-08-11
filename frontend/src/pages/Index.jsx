@@ -137,7 +137,7 @@ const Index = () => {
                     <span className='text-[#aca9a9] text-2xl font-medium'>
                         Canva makes it easy to create and share professional designs.
                     </span>
-                    <button className='py-2 w-[200px] text-center bg-purple-700 text-white transition-all hover:bg-purple-500 rounded-[5px] font-medium'>
+                    <button onClick={() => { setType('signin'); setShow(true) }} className='py-2 w-[200px] text-center bg-purple-700 text-white transition-all hover:bg-purple-500 rounded-[5px] font-medium'>
                         Sign Up for Free
                     </button>
                 </div>
