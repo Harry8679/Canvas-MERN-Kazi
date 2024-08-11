@@ -29,6 +29,7 @@ const Index = () => {
                 <div className='w-[350px] bg-[#323335] m-auto px-6 py-4 rounded-md relative'>
                     <div onClick={() => setShow(false)} className='absolute right-4 top-4 text-xl cursor-pointer text-white'><RxCross2 /></div>
                     <h2 className='text-white pb-4 text-center text-xl'>Login and Sign up in seconds</h2>
+
                     { type === 'signin' && 
                     <form action="">
                         <div className='flex flex-col gap-3 mb-3 text-white'>
@@ -120,10 +121,10 @@ const Index = () => {
                             <img src='https://static.canva.com/web/images/12487a1e0770d29351bd4ce4f87ec8fe.svg' alt='canva logo' />
                         </div>
                         <div className='flex gap-4'>
-                            <button onClick={() => setShow(true)} className='py-2 w-[80px] text-center bg-teal-700 text-white transition-all hover:bg-teal-500 rounded-[5px] font-medium'>
+                            <button onClick={() => {setType('signin'); setShow(true)}} className='py-2 w-[80px] text-center bg-teal-700 text-white transition-all hover:bg-teal-500 rounded-[5px] font-medium'>
                                 Sign In
                             </button>
-                            <button className='py-2 w-[80px] text-center bg-purple-700 text-white transition-all hover:bg-purple-500 rounded-[5px] font-medium'>
+                            <button onClick={() => {setType('signup'); setShow(true)}} className='py-2 w-[80px] text-center bg-purple-700 text-white transition-all hover:bg-purple-500 rounded-[5px] font-medium'>
                                 Sign Up
                             </button>
                         </div>
