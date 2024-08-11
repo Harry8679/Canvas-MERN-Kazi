@@ -88,7 +88,7 @@ const Index = () => {
                         </div>
                         <div>
                             <button className='px-3 py-2 rounded-md bg-purple-500 w-full outline-none hover:bg-purple-600 text-white'>
-                                Sign In
+                                Sign Un
                             </button>
                         </div>
                         <div className='flex py-4 justify-between items-center px-3'>
