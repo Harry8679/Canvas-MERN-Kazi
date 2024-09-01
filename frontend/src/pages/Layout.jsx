@@ -1,6 +1,9 @@
 // import React from 'react'
 
+import { useState } from "react"
+
 const Layout = () => {
+  const [show, setShow] = useState(false);
   return (
     <div className="bg-[#18191b] min-h-screen w-full">
       <div className="bg-[#212223] shadow-md left-0 top-0 w-full z-20">
@@ -13,7 +16,7 @@ const Layout = () => {
                     <button className="py-2 px-2 overflow-hidden text-center bg-[#8b3dff] text-white rounded-[5px] font-medium">
                         Create a Design
                     </button>
-                    <div className="cursor-pointer">
+                    <div className="cursor-pointer" onClick={() => setShow(!show)}>
                         <img className="w-[48px] h-[45px] rounded-full" src="https://img-c.udemycdn.com/user/200_H/42175526_ac8a.jpg" alt="Me" />
                     </div>
                 </div>
