@@ -19,6 +19,8 @@ const Layout = () => {
                     <div className="cursor-pointer" onClick={() => setShow(!show)}>
                         <img className="w-[48px] h-[45px] rounded-full" src="https://img-c.udemycdn.com/user/200_H/42175526_ac8a.jpg" alt="Me" />
                     </div>
+
+                    <div className={`absolute top-[60px] right-0 w-[250px] bg-[#313030] p-3 border-gray-700 transition duration-500`}></div>
                 </div>
             </div>
         </div>
