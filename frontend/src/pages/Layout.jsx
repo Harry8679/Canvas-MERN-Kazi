@@ -9,6 +9,11 @@ const Layout = () => {
                 <div className="w-[80px] h-[48px]">
                     <img src="https://static.canva.com/web/images/12487a1e0770d29351bd4ce4f87ec8fe.svg" alt="" />
                 </div>
+                <div className="flex gap-4 justify-center items-center relative">
+                    <button className="py-2 px-2 overflow-hidden text-center bg-[#8b3dff] text-white rounded-[5px] font-medium">
+                        Create a Design
+                    </button>
+                </div>
             </div>
         </div>
       </div>
