@@ -1,11 +1,12 @@
 // import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Index from './pages/Index';
+// import Index from './pages/Index';
+import Layout from './pages/Layout';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Index />
+    element: <Layout />
   }
 ]);
 
