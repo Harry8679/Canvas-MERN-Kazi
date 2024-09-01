@@ -13,6 +13,9 @@ const Layout = () => {
                     <button className="py-2 px-2 overflow-hidden text-center bg-[#8b3dff] text-white rounded-[5px] font-medium">
                         Create a Design
                     </button>
+                    <div className="cursor-pointer">
+                        <img className="w-[48px] h-[45px] rounded-full" src="https://img-c.udemycdn.com/user/200_H/42175526_ac8a.jpg" alt="Me" />
+                    </div>
                 </div>
             </div>
         </div>
