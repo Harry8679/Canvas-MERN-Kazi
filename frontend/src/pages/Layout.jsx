@@ -1,6 +1,7 @@
 // import React from 'react'
 
 import { useState } from "react"
+import { Link } from "react-router-dom";
 
 const Layout = () => {
   const [show, setShow] = useState(false);
@@ -20,7 +21,24 @@ const Layout = () => {
                         <img className="w-[48px] h-[45px] rounded-full" src="https://img-c.udemycdn.com/user/200_H/42175526_ac8a.jpg" alt="Me" />
                     </div>
 
-                    <div className={`absolute top-[60px] right-0 w-[250px] bg-[#313030] p-3 border-gray-700 transition duration-500`}></div>
+                    <div className={`absolute top-[60px] right-0 w-[300px] bg-[#313030] p-3 border-gray-700 transition duration-500 ${show ? 'visible opacity-100':'invisible opacity-30'}`}>
+                        <div className="px-2 py-2 flex justify-start gap-5 items-center">
+                            <img className="w-[40px] h-[40px] rounded-full" src="https://img-c.udemycdn.com/user/200_H/42175526_ac8a.jpg" alt="Me again" />
+                            <div className="flex justify-center flex-col items-start">
+                                <span className="text-[#e0dddd] font-bold text-md">Harry</span>
+                                <span className="text-[#e0dddd] font-bold text-md">harry.maccode@lhlp.com</span>
+                            </div>
+                        </div>
+
+                        <ul className="text-[#e0dddd] font-semibold">
+                            <li>
+                                <Link className="p-2 cursor-pointer"><span>Setting</span></Link>
+                            </li>
+                            <li>
+                                <Link className="p-2 cursor-pointer"><span>Logout</span></Link>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
