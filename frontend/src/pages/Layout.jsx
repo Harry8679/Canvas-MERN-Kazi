@@ -53,7 +53,9 @@ const Layout = () => {
                     <span className="text-[#e0dddd] text-sm">Free</span>
                 </div>
                 <ul className="px-4 flex flex-col gap-2">
-                    <li></li>
+                    <li>
+                        <Link></Link>
+                    </li>
                 </ul>
             </div>
         </div>
