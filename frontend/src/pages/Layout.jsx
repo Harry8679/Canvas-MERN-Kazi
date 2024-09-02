@@ -52,6 +52,7 @@ const Layout = () => {
                     <span className="text-[#e0dddd] font-bold text-md">Harry MacCode</span>
                     <span className="text-[#e0dddd] text-sm">Free</span>
                 </div>
+                <ul className="px-4 flex flex-col gap-2"></ul>
             </div>
         </div>
       </div>
