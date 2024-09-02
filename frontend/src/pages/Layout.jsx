@@ -48,6 +48,10 @@ const Layout = () => {
         <div className="sidebar w-[300px] p-5 h-[calc(100vh-70px)] fixed bg-[#34569f]">
             <div className="px-2 py-2 flex justify-start gap-5 items-center mb-3">
                 <img className="w-[40px] h-[40px] rounded-full" src="https://img-c.udemycdn.com/user/200_H/42175526_ac8a.jpg" alt="Me again" />
+                <div className="flex justify-center flex-col items-start">
+                    <span className="text-[#e0dddd] font-bold text-md">Harry MacCode</span>
+                    <span className="text-[#e0dddd] text-sm">Free</span>
+                </div>
             </div>
         </div>
       </div>
